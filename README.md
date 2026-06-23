@@ -1,165 +1,139 @@
-**Healthcare Risk Analytics Dashboard**
+**Healthcare Risk Analytics – End-to-End Data Project**
 
 **Project Overview**
 
-This project presents an end-to-end healthcare analytics solution focused on identifying and analyzing risk patterns associated with Diabetes and Stroke. By leveraging feature engineering, exploratory data analysis (EDA), SQL-based data transformation, and Power BI visualization, the project delivers actionable insights for early risk detection and preventive healthcare strategies.
+This project presents a comprehensive end-to-end healthcare analytics solution focused on identifying and analyzing risk patterns associated with Diabetes and Stroke. The analysis leverages structured datasets and applies data engineering, SQL transformation, exploratory data analysis, and business intelligence visualization to derive actionable insights.
 
+The primary objective is to understand how demographic and health-related factors such as age, BMI, lifestyle risk, and health indicators influence disease occurrence and progression.
 ---
-
 **Business Problem**
 
-Chronic diseases like diabetes and stroke pose significant challenges to healthcare systems. The key objective of this project is:
+Healthcare organizations require data-driven approaches to:
 
-«To identify high-risk populations based on age, BMI, and lifestyle factors, and understand the progression from metabolic disorders (diabetes) to cardiovascular conditions (stroke).»
-
+Identify high-risk population segments
+Understand the impact of lifestyle and physiological factors
+Enable early intervention and preventive strategies
 ---
+This project addresses the problem by analyzing:
 
-**Methodology**
+How diabetes and stroke risks vary across age groups
+The influence of BMI and lifestyle on disease probability
+The relationship between metabolic and cardiovascular risks
 
-1. Data Collection & Preparation
+**Project Workflow**
 
-  - Utilized structured healthcare datasets:
-  - Diabetes Dataset
-  - Stroke Dataset
-  - Cleaned and preprocessed missing and inconsistent values
----
+**Raw Data → Data Cleaning → Feature Engineering → SQL Transformation → EDA → Power BI Dashboard → Insights**
 
-2. Feature Engineering
+**Phase 1: Data Cleaning and Preparation**
 
-Derived meaningful analytical features:
+Key Activities
+Handling missing values and inconsistencies
+Removing duplicates
+Standardizing categorical variables
+Validating dataset integrity
+Challenges Faced
+Inconsistent category labels in BMI and health indicators
+Missing or incomplete values in critical columns
+Synthetic dataset inconsistencies affecting realism
+Resolution
+Applied controlled imputation strategies
+Created standardized mappings for categorical fields
+Ensured consistency across datasets before further processing
 
-  - Age Groups (18–24 to 80+)
-  - BMI Categories (Underweight, Normal, Overweight, Obese)
-  - Lifestyle Risk Index
-  - Health Score
+**Phase 2: Feature Engineering**
 
-👉 This step enhanced interpretability and enabled meaningful segmentation.
----
+Engineered Features
+Age Group segmentation
+BMI Category classification
+Lifestyle Risk scoring
+Health Score (composite metric)
+Challenges Faced
+Initial engineered features lacked logical correlation with target variables
+Encountered errors such as missing feature columns during analysis
+Unrealistic distributions affecting downstream analysis
+Resolution
+Iteratively refined datasets (v1 to v6)
+Rebuilt features based on domain logic and statistical validation
+Ensured alignment between engineered features and expected outcomes
 
-3. SQL-Based Data Transformation
+**Phase 3: SQL Data Transformation**
+Key Work
+Developed analytical queries for aggregation and segmentation
+Created reusable SQL views for reporting
+Key Output
+FINAL_RISK_SUMMARY view used in Power BI dashboard
+Challenges Faced
+Incorrect joins leading to duplication
+Aggregation inconsistencies
+Performance inefficiencies in query execution
+Resolution
+Optimized joins and grouping logic
+Validated query outputs against source data
+Structured SQL views for efficient BI integration
 
-  - Implemented SQL queries for structured data handling
-  - Created analytical views to support dashboard insights
+**Phase 4: Exploratory Data Analysis**
 
-⭐ Key SQL View:
+Analysis Performed
+Distribution analysis of age, BMI, and lifestyle risk
+Comparative analysis between diabetic and non-diabetic populations
+Stroke vs diabetes relationship exploration
+Correlation analysis between health indicators
+Challenges Faced
+Misleading visualizations due to improper feature alignment
+Incorrect category ordering affecting interpretation
+Data inconsistencies impacting chart accuracy
+Resolution
+Standardized category ordering
+Validated feature integrity before plotting
+Ensured consistent visualization logic across all charts
 
-"FINAL_RISK_SUMMARY"
-
-  - Aggregates:
-  - Diabetes Rate
-  - Stroke Rate
-  - Risk Gap
-  - High-Risk Population %
-  - Used directly in Power BI for KPI generation
----
-
-**4. Exploratory Data Analysis (EDA)**
-
-Performed multi-dimensional analysis using Python:
-
-  - Age vs Disease Trends
-  - BMI vs Risk Distribution
-  - Lifestyle Impact Analysis
-  - Glucose vs Stroke Relationship
-  - Correlation Heatmap
----
-
-**5. Dashboard Development (Power BI)**
-
-Developed an interactive dashboard with the following pages:
-
+**Phase 5: Power BI Dashboard Development**
+Dashboard Structure
 Executive Overview
-
-- KPI Cards:
-  - Total Population
-  - Diabetes Rate %
-  - Stroke Rate %
-  - Risk Gap
-  - High Risk %
-
 Diabetes Risk Analysis
-
-- Age vs BMI progression
-- Lifestyle impact on diabetes
-- High-risk segmentation
-
 Comparative Health Insights
+Final Conclusion
+Features Implemented
+KPI cards for key metrics
+Age-wise risk trend analysis
+BMI-based segmentation
+Lifestyle impact visualization
+Interactive filtering capabilities
 
-- Diabetes vs Stroke comparison
-- Distribution across BMI categories
-- Health score relationship
+**Challenges Faced**
+KPI values initially showing incorrect results due to DAX issues
+Difficulty in establishing proper data relationships
+Layout and storytelling inconsistencies
 
-Conclusion
-  
-  - Key risk segments:
-  - Obese population
-  - Age group 70–74
-  - Final actionable insights
----
+**Resolution**
+Corrected DAX measures and relationships
+Structured dashboard flow for better storytelling
+Applied consistent design and visual hierarchy
 
-Key Insights
+**Key Insights**
+Diabetes risk increases significantly with age
+Obesity and overweight categories show the highest risk levels
+Lifestyle factors strongly influence disease probability
+Stroke risk follows a similar pattern but at a lower magnitude
+There is a progression from metabolic disorders to cardiovascular risks
 
-- Diabetes risk (~15%) is significantly higher than stroke (~5%)
-- Risk increases sharply after age 50
-- Obesity is the strongest contributing factor
-- Lifestyle risk strongly correlates with diabetes occurrence
-- Stroke risk follows a similar trend but appears as a secondary progression
----
+**Tools and Technologies**
+Python (Pandas, Seaborn, Matplotlib)
+SQL (Data transformation and analytical views)
+Power BI (Dashboard and visualization)
+Excel (Intermediate validation)
 
-Tech Stack
-
-- Python: Pandas, NumPy, Matplotlib, Seaborn
-- SQL: Data transformation, analytical views
-- Power BI: Dashboarding & visualization
-- Data Analysis: Feature Engineering & EDA
----
-
-Project Structure
+**Project Structure**
 
 Healthcare-Risk-Analytics/
-│
-├── data/
-├── scripts/
-├── dashboard/
-├── images/
-├── README.md
-├── requirements.txt
----
 
-**Dashboard Preview**
+datasets/
+notebooks/
+sql/
+powerbi/
+images/
+README.md
+Conclusion
 
-"Executive Overview" (images/page1.png)
-"Diabetes Analysis" (images/page2.png)
-"Comparative Insights" (images/page3.png)
-"Final Summary" (images/page4.png)
----
+This project demonstrates a complete data analytics workflow from raw data processing to business intelligence reporting. It highlights the importance of feature engineering, data validation, and structured visualization in deriving meaningful insights from healthcare data.
 
-**Outcome :**
-
-This project successfully delivers a data-driven decision support system that:
-
-- Identifies high-risk populations
-- Highlights key contributing factors
-- Demonstrates disease progression patterns
-- Supports early intervention strategies
----
-
-**Limitations :**
-
-- Dataset is synthetic and may not fully represent real-world scenarios
-- Analysis is descriptive (EDA-based), not predictive
-- No statistical hypothesis testing applied
----
-
-**Future Enhancements :**
-
-  - Build predictive models (Logistic Regression / ML models)
-  - Integrate real-world healthcare datasets
-  - Deploy dashboard to Power BI Service
-  - Add real-time data pipeline
----
-
-**Contact**
-
-If you found this project insightful, feel free to connect or reach out!
- And if you like this project, consider giving it a star!
