@@ -22,6 +22,7 @@ Chronic diseases like diabetes and stroke pose significant challenges to healthc
   - Diabetes Dataset
   - Stroke Dataset
   - Cleaned and preprocessed missing and inconsistent values
+---
 
 2. Feature Engineering
 
@@ -33,6 +34,7 @@ Derived meaningful analytical features:
   - Health Score
 
 👉 This step enhanced interpretability and enabled meaningful segmentation.
+---
 
 3. SQL-Based Data Transformation
 
@@ -49,6 +51,7 @@ Derived meaningful analytical features:
   - Risk Gap
   - High-Risk Population %
   - Used directly in Power BI for KPI generation
+---
 
 **4. Exploratory Data Analysis (EDA)**
 
@@ -59,6 +62,7 @@ Performed multi-dimensional analysis using Python:
   - Lifestyle Impact Analysis
   - Glucose vs Stroke Relationship
   - Correlation Heatmap
+---
 
 **5. Dashboard Development (Power BI)**
 
@@ -91,6 +95,7 @@ Conclusion
   - Obese population
   - Age group 70–74
   - Final actionable insights
+---
 
 Key Insights
 
@@ -99,6 +104,7 @@ Key Insights
 - Obesity is the strongest contributing factor
 - Lifestyle risk strongly correlates with diabetes occurrence
 - Stroke risk follows a similar trend but appears as a secondary progression
+---
 
 Tech Stack
 
@@ -106,6 +112,7 @@ Tech Stack
 - SQL: Data transformation, analytical views
 - Power BI: Dashboarding & visualization
 - Data Analysis: Feature Engineering & EDA
+---
 
 Project Structure
 
@@ -117,6 +124,7 @@ Healthcare-Risk-Analytics/
 ├── images/
 ├── README.md
 ├── requirements.txt
+---
 
 **Dashboard Preview**
 
@@ -124,8 +132,9 @@ Healthcare-Risk-Analytics/
 "Diabetes Analysis" (images/page2.png)
 "Comparative Insights" (images/page3.png)
 "Final Summary" (images/page4.png)
+---
 
-Outcome :-
+**Outcome :**
 
 This project successfully delivers a data-driven decision support system that:
 
@@ -133,19 +142,22 @@ This project successfully delivers a data-driven decision support system that:
 - Highlights key contributing factors
 - Demonstrates disease progression patterns
 - Supports early intervention strategies
+---
 
-Limitations :-
+**Limitations :**
 
 - Dataset is synthetic and may not fully represent real-world scenarios
 - Analysis is descriptive (EDA-based), not predictive
 - No statistical hypothesis testing applied
+---
 
-Future Enhancements :-
+**Future Enhancements :**
 
   - Build predictive models (Logistic Regression / ML models)
   - Integrate real-world healthcare datasets
   - Deploy dashboard to Power BI Service
   - Add real-time data pipeline
+---
 
 **Contact**
 
