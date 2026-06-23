@@ -1,0 +1,24 @@
+UPDATE stroke_data
+SET bmi_category = TRIM(REPLACE(bmi_category, '\r', ''));
+
+ALTER TABLE stroke_data DROP COLUMN age_group;
+
+ALTER TABLE stroke_data ADD age_group VARCHAR(20);
+
+UPDATE stroke_data
+SET age_group = 
+CASE 
+    WHEN age BETWEEN 18 AND 24 THEN '18-24'
+    WHEN age BETWEEN 25 AND 29 THEN '25-29'
+    WHEN age BETWEEN 30 AND 34 THEN '30-34'
+    WHEN age BETWEEN 35 AND 39 THEN '35-39'
+    WHEN age BETWEEN 40 AND 44 THEN '40-44'
+    WHEN age BETWEEN 45 AND 49 THEN '45-49'
+    WHEN age BETWEEN 50 AND 54 THEN '50-54'
+    WHEN age BETWEEN 55 AND 59 THEN '55-59'
+    WHEN age BETWEEN 60 AND 64 THEN '60-64'
+    WHEN age BETWEEN 65 AND 69 THEN '65-69'
+    WHEN age BETWEEN 70 AND 74 THEN '70-74'
+    WHEN age BETWEEN 75 AND 79 THEN '75-79'
+    ELSE '80+'
+END;
