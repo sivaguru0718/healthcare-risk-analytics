@@ -152,20 +152,20 @@ Raw Data → Data Cleaning → Feature Engineering → SQL Transformation → ED
 - Excel (Intermediate validation)
 
 ---
+## 📁 Project Structure
 
-## Project Structure
-
+```
 Healthcare_Risk_Analytics/
 │
-├── Dashboard/
+├── 📊 Dashboard/
 │   ├── Healthcare_Dashboard.pbix
-│   └── PNG Images of Dashboard/
-│       ├── Executive Overview.png
-│       ├── Diabetes Risk Analysis by BMI & Lifestyle.png
-│       ├── Comparative Health Risk Insights.png
-│       └── Conclusion.png
+│   ├── PNG_Images_of_Dashboard/
+│   │   ├── Executive_Overview.png
+│   │   ├── Diabetes_Risk_Analysis_by_BMI_&_Lifestyle.png
+│   │   ├── Comparative_Health_Risk_Insights.png
+│   │   └── Conclusion.png
 │
-├── data/
+├── 📂 data/
 │   ├── raw_datasets/
 │   ├── cleaned_datasets/
 │   ├── featured_datasets_1/
@@ -174,41 +174,55 @@ Healthcare_Risk_Analytics/
 │       ├── Analytical_Datasets/
 │       └── SQL_Views/
 │
-├── Images/
-│   └── EDA_graphs/
-│       ├── Age Group vs Diabetes (Count Comparison).png
-│       ├── BMI Category vs Diabetes (Count Analysis).png
-│       ├── BMI Category vs Diabetes (Proportion Analysis).png
-│       ├── Lifestyle Risk vs Diabetes (Distribution Analysis).png
-│       ├── Health Score vs Diabetes (Distribution Analysis).png
-│       ├── Age vs Stroke (Distribution Analysis).png
-│       ├── Glucose Level vs Stroke (Distribution Analysis).png
-│       ├── Correlation Heatmap of Health Risk Factors.png
-│       ├── BMI Category vs Stroke (Proportion Analysis).png
-│       ├── Diabetes Age Distribution.png
-│       ├── Stroke Age Distribution.png
-│       ├── Diabetes Rate by Age Group (%).png
-│       ├── Stroke Rate by BMI Category (%).png
-│       ├── Lifestyle Risk Distribution.png
-│       └── Age Group Comparative Risk Analysis.png
+├── 📈 Images/
+│   ├── EDA_graphs/
+│   │   ├── Age_Group_vs_Diabetes_(Count_Comparison).png
+│   │   ├── BMI_Category_vs_Diabetes_(Count_Analysis).png
+│   │   ├── BMI_Category_vs_Diabetes_(Proportion_Analysis).png
+│   │   ├── Lifestyle_Risk_vs_Diabetes_(Distribution).png
+│   │   ├── Health_Score_vs_Diabetes_(Distribution).png
+│   │   ├── Age_vs_Stroke_(Distribution).png
+│   │   ├── Glucose_Level_vs_Stroke_(Distribution).png
+│   │   ├── Correlation_Heatmap_of_Health_Risk_Factors.png
+│   │   ├── BMI_Category_vs_Stroke_(Proportion).png
+│   │   ├── Diabetes_Age_Distribution.png
+│   │   ├── Stroke_Age_Distribution.png
+│   │   ├── Diabetes_Rate_by_Age_Group.png
+│   │   ├── Stroke_Rate_by_BMI_Category.png
+│   │   ├── Lifestyle_Risk_Distribution.png
+│   │   └── Age_Group_Comparative_Risk_Analysis.png
 │
-├── scripts/
-│   ├── Python_scripts/
-│   │   ├── Data_cleaning.py
-│   │   ├── EDA.py
-│   │   ├── Feature_engineering_1.0.py
-│   │   ├── Feature_engineering_1.1.py
-│   │   ├── Featured_engineering_2.0.py
-│   │   └── Featured_engineering_2.1.py
-│   │
-│   └── SQL_Queries/
-│       ├── TABLE_CREATION_AND_LOADING_DATA.sql
-│       ├── VIEWS_AND_JOINS.sql
-│       ├── ANALYTICAL_QUERIES.sql
-│       ├── STORED_PROCEDURES_AND_INDEXES.sql
-│       └── FIXES_IN_PROJECT.sql
+├── ⚙️ scripts/
+│   └── Python_scripts/
+│       ├── Data_cleaning.py
+│       ├── EDA.py
+│       ├── Feature_engineering_1.0.py
+│       ├── Feature_engineering_1.1.py
+│       ├── Featured_engineering_2.0.py
+│       └── Featured_engineering_2.1.py
 │
-└── README.md
+├── 🗄️ SQL_Queries/
+│   ├── TABLE_CREATION_AND_LOADING_DATA.sql
+│   ├── VIEWS_AND_JOINS.sql
+│   ├── ANALYTICAL_QUERIES.sql
+│   ├── STORED_PROCEDURES_AND_INDEXES.sql
+│   └── FIXES_IN_PROJECT.sql
+│
+└── 📄 README.md
+```
+
+---
+
+### 📌 Notes
+
+- **Dashboard/** → Contains Power BI file and exported dashboard visuals  
+- **data/** → Organized pipeline datasets (raw → cleaned → featured → SQL derived)  
+- **Images/** → All EDA and analytical visualizations  
+- **scripts/** → Python code for preprocessing, EDA, and feature engineering  
+- **SQL_Queries/** → Database schema, transformations, and analytical queries  
+
+---
+
 
 ## Conclusion
 
