@@ -155,15 +155,60 @@ Raw Data → Data Cleaning → Feature Engineering → SQL Transformation → ED
 
 ## Project Structure
 
-Healthcare-Risk-Analytics/
-- data/
-- scripts/
-- sql/
-- powerbi/
-- images/
-- README.md
-
----
+Healthcare_Risk_Analytics/
+│
+├── Dashboard/
+│   ├── Healthcare_Dashboard.pbix
+│   └── PNG Images of Dashboard/
+│       ├── Executive Overview.png
+│       ├── Diabetes Risk Analysis by BMI & Lifestyle.png
+│       ├── Comparative Health Risk Insights.png
+│       └── Conclusion.png
+│
+├── data/
+│   ├── raw_datasets/
+│   ├── cleaned_datasets/
+│   ├── featured_datasets_1/
+│   ├── featured_datasets_2/
+│   └── SQL_derived_datasets_and_views/
+│       ├── Analytical_Datasets/
+│       └── SQL_Views/
+│
+├── Images/
+│   └── EDA_graphs/
+│       ├── Age Group vs Diabetes (Count Comparison).png
+│       ├── BMI Category vs Diabetes (Count Analysis).png
+│       ├── BMI Category vs Diabetes (Proportion Analysis).png
+│       ├── Lifestyle Risk vs Diabetes (Distribution Analysis).png
+│       ├── Health Score vs Diabetes (Distribution Analysis).png
+│       ├── Age vs Stroke (Distribution Analysis).png
+│       ├── Glucose Level vs Stroke (Distribution Analysis).png
+│       ├── Correlation Heatmap of Health Risk Factors.png
+│       ├── BMI Category vs Stroke (Proportion Analysis).png
+│       ├── Diabetes Age Distribution.png
+│       ├── Stroke Age Distribution.png
+│       ├── Diabetes Rate by Age Group (%).png
+│       ├── Stroke Rate by BMI Category (%).png
+│       ├── Lifestyle Risk Distribution.png
+│       └── Age Group Comparative Risk Analysis.png
+│
+├── scripts/
+│   ├── Python_scripts/
+│   │   ├── Data_cleaning.py
+│   │   ├── EDA.py
+│   │   ├── Feature_engineering_1.0.py
+│   │   ├── Feature_engineering_1.1.py
+│   │   ├── Featured_engineering_2.0.py
+│   │   └── Featured_engineering_2.1.py
+│   │
+│   └── SQL_Queries/
+│       ├── TABLE_CREATION_AND_LOADING_DATA.sql
+│       ├── VIEWS_AND_JOINS.sql
+│       ├── ANALYTICAL_QUERIES.sql
+│       ├── STORED_PROCEDURES_AND_INDEXES.sql
+│       └── FIXES_IN_PROJECT.sql
+│
+└── README.md
 
 ## Conclusion
 
