@@ -156,8 +156,8 @@ Raw Data → Data Cleaning → Feature Engineering → SQL Transformation → ED
 ## Project Structure
 
 Healthcare-Risk-Analytics/
-- datasets/
-- notebooks/
+- data/
+- scripts/
 - sql/
 - powerbi/
 - images/
