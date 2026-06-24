@@ -212,7 +212,7 @@ Healthcare_Risk_Analytics/
 ### 📌 Notes
 
 - **Dashboard/** → Contains Power BI file and exported dashboard visuals  
-- **data/** → Organized pipeline datasets (raw → cleaned → featured → SQL derived)  
+- **data/** → featured datasets and sql derived view (FINAL_RISK_SUMMARY) 
 - **Images/** → All EDA and analytical visualizations  
 - **scripts/** → Python code for preprocessing, EDA, and feature engineering  
 - **SQL_Queries/** → Database schema, transformations, and analytical queries  
