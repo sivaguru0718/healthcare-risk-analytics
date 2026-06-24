@@ -166,13 +166,9 @@ Healthcare_Risk_Analytics/
 │   │   └── Conclusion.png
 │
 ├── 📂 data/
-│   ├── raw_datasets/
-│   ├── cleaned_datasets/
+│   ├── SQL derived View (FINAL_RISK_SUMMARY)
 │   ├── featured_datasets_1/
-│   ├── featured_datasets_2/
-│   └── SQL_derived_datasets_and_views/
-│       ├── Analytical_Datasets/
-│       └── SQL_Views/
+│   ├── featured_datasets_2/   
 │
 ├── 📈 Images/
 │   ├── EDA_graphs/
