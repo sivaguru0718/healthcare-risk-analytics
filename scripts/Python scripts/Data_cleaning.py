@@ -86,9 +86,6 @@ def save_cleaned_data(df_diabetes, df_stroke):
         print("Error saving files:", e)
 
 
-# ============================================
-# MAIN EXECUTION PIPELINE
-# ============================================
 
 def main():
     df_diabetes, df_stroke = load_data()
@@ -111,6 +108,5 @@ def main():
     print("\n✅ DATA CLEANING PIPELINE COMPLETED SUCCESSFULLY!")
 
 
-# Run script
 if __name__ == "__main__":
     main()
